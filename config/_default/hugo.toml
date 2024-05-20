@@ -1,0 +1,26 @@
+baseURL = 'https://braveseokyung.github.io/'
+languageCode = 'en-us'
+title = 'brog'
+theme='DoIt'
+
+[params]
+    [params.page]
+        # whether to enable series navigation
+        seriesNavigation=true
+
+        [params.page.toc]
+        # whether to enable the table of the contents
+        enable = true
+
+        # whether to keep the static table of the contents in front of the post
+        keepStatic = false
+
+        # whether to make the table of the contents in the sidebar automatically collapsed
+        auto = true
+
+# Options for taxonomies
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"
+series = "series"
