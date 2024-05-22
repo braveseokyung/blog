@@ -44,7 +44,7 @@ git submodule add https://github.com/HEIGE-PCloud/DoIt.git themes/DoIt
 public 폴더는 나중에 생성되는 폴더이므로 없어도 괜찮다. 또 config 폴더는 블로그의 제목, 설명, TOC 등등 여러 설정에 대한 폴더인데, 조금 이따가 설명하겠다. 지금은 config 폴더 대신에 hugo.toml 파일이 있어야 한다.
 
 이 hugo.toml 파일로 들어가면 
-```t
+```toml
 baseURL = 'https://braveseokyung.github.io/'
 languageCode = 'en-us'
 title = 'brog'
@@ -139,11 +139,13 @@ draft : false로 설정하면 commit 시에 글이 실제로 배포된다.
 blog/themes/DoIt/exampleSite에 들어가서 config/_default 파일을 보면 여러가지 .toml 파일이 있는 것을 확인할 수 있다. 이 .toml 파일들은 참고하여 hugo.toml 파일에 합쳤다. 이후 exampleSite처럼 blog/config/_default 폴더를 만들어서 hugo.toml 파일을 옮겨주었다.
 
 지금까지 수정한 hugo.toml 파일은 아래와 같다. 블로그를 쓰면서 필요한 것이 있을 때마다 계속 업데이트할 예정이다.
-```t
+```toml
 baseURL = 'https://braveseokyung.github.io/'
 languageCode = 'en-us'
 title = 'brog'
-theme='DoIt'
+theme ='DoIt'
+#site default theme ("light", "dark", "black", "auto")
+defaultTheme = "light"
 
 [params]
     [params.page]
@@ -160,6 +162,10 @@ theme='DoIt'
         # whether to make the table of the contents in the sidebar automatically collapsed
         auto = true
 
+        [params.page.code]
+        # the maximum number of lines of displayed code by default
+        maxShownLines = 15
+
 # Options for taxonomies
 [taxonomies]
 author = "authors"
@@ -168,7 +174,9 @@ tag = "tags"
 series = "series"
 ```
 
-[params]를 통해 toc를 enable 해주었고, [taxonomies]를 설정하면 series 별로 폴더가 생성된다.
+* [params.page.toc] toc enable
+* [parmas.page.code] code block이 maxShownLines를 넘지 않으면 열려있고, 넘으면 토글로 닫혀있음.
+* [taxonomies] series 폴더가 생성됨
 
 ### 첫 글 배포하기
 draft : false로 바꾼 후,
@@ -190,6 +198,13 @@ git push origin master
 ```
 ## 끝!!
 드디어 .io로 끝나는 블로그가 생기다니 밥 안먹어도 배부르다. 내새꾸 같은 블로그 열심히 써봐야지
+
+## References
+[Hugo 공식 Demo 블로그](https://hugodoit.pages.dev/theme-documentation-basics/#style-customization)
+
+[Hugo 블로그 만들기 - GOODJIN](https://goodjin.kr/make-hugo-blog-in-local/)
+
+[integerous.github.io](https://github.com/Integerous/Integerous.github.io?tab=readme-ov-file)
 
 
 
