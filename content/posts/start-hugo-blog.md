@@ -147,6 +147,15 @@ theme ='DoIt'
 #site default theme ("light", "dark", "black", "auto")
 defaultTheme = "light"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+          inline = [['$', '$']]
+
 [params]
     [params.page]
         # whether to enable series navigation
@@ -166,6 +175,15 @@ defaultTheme = "light"
         # the maximum number of lines of displayed code by default
         maxShownLines = 15
 
+        [params.page.math]
+        enable = true
+        blockLeftDelimiter = '$$'
+        blockRightDelimiter = '$$'
+        inlineLeftDelimiter = '$'
+        inlineRightDelimiter = '$'
+        copyTex = true
+        mhchem = true
+
 # Options for taxonomies
 [taxonomies]
 author = "authors"
@@ -177,6 +195,7 @@ series = "series"
 * [params.page.toc] toc enable
 * [parmas.page.code] code block이 maxShownLines를 넘지 않으면 열려있고, 넘으면 토글로 닫혀있음.
 * [taxonomies] series 폴더가 생성됨
+* [markup], [params.page.math] latex(block-$$, inline-$)
 
 ### 첫 글 배포하기
 draft : false로 바꾼 후,

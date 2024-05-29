@@ -5,6 +5,15 @@ theme ='DoIt'
 #site default theme ("light", "dark", "black", "auto")
 defaultTheme = "light"
 
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+          inline = [['$', '$']]
+
 [params]
     [params.page]
         # whether to enable series navigation
@@ -23,6 +32,15 @@ defaultTheme = "light"
         [params.page.code]
         # the maximum number of lines of displayed code by default
         maxShownLines = 15
+
+        [params.page.math]
+        enable = true
+        blockLeftDelimiter = '$$'
+        blockRightDelimiter = '$$'
+        inlineLeftDelimiter = '$'
+        inlineRightDelimiter = '$'
+        copyTex = true
+        mhchem = true
 
 # Options for taxonomies
 [taxonomies]
