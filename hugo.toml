@@ -1,0 +1,50 @@
+baseURL = 'https://braveseokyung.github.io/'
+languageCode = 'en-us'
+title = 'brog'
+theme ='DoIt'
+#site default theme ("light", "dark", "black", "auto")
+defaultTheme = "light"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['$$', '$$']]
+          inline = [['$', '$']]
+
+[params]
+    [params.page]
+        # whether to enable series navigation
+        seriesNavigation=true
+
+        [params.page.toc]
+        # whether to enable the table of the contents
+        enable = true
+
+        # whether to keep the static table of the contents in front of the post
+        keepStatic = false
+
+        # whether to make the table of the contents in the sidebar automatically collapsed
+        auto = true
+
+        [params.page.code]
+        # the maximum number of lines of displayed code by default
+        maxShownLines = 15
+
+        [params.page.math]
+        enable = true
+        blockLeftDelimiter = '$$'
+        blockRightDelimiter = '$$'
+        inlineLeftDelimiter = '$'
+        inlineRightDelimiter = '$'
+        copyTex = true
+        mhchem = true
+
+# Options for taxonomies
+[taxonomies]
+author = "authors"
+category = "categories"
+tag = "tags"
+series = "series"
