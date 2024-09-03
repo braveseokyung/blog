@@ -4,7 +4,7 @@ date : 2024-08-28T15:37:24+09:00
 draft : false
 authors : ["braveseokyung"]
 description : 전송계층의 TCP와 UDP의 차이를 알아보자
-categories : ["Computer Network"]
+categories : ["computer-network"]
 toc:
     auto: true
 ---
