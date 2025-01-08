@@ -1,7 +1,7 @@
 ---
 title : '[논문 리뷰] Data-Efficient Multimodal Fusion on a Single GPU'
 date : 2025-01-08T21:56:50+09:00
-draft : true
+draft : false
 authors : ["braveseokyung"]
 description : CVPR 2024 Highlight paper인 Data-Efficient Multimodal Fusion on a Single GPU 논문을 읽고 정리한 내용입니다.
 categories : ["paper-review"]
