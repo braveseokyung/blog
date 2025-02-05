@@ -1,7 +1,7 @@
 ---
 title : 'Machine Unlearning(forgetting)이란?'
 date : 2025-01-22T16:18:43+09:00
-draft : true
+draft : false
 authors : ["braveseokyung"]
 description : 배울 수 있다면, 잊을 수도 있어야지! 딥러닝에서 Machine Unlearning task에 대해 살펴보자.
 categories : ["딥러닝", "Unlearning"]
