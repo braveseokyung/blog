@@ -6,7 +6,7 @@ authors : ["braveseokyung"]
 description : MLE(Maximum Likelihood Estimator)와는 다른, Bayesian Estimator에 대해 알아보자!
 categories : ["courses"]
 series : ["information-theory-and-inference"]
-series_weight : 1
+series_weight : 4
 toc:
     auto: true
 ---

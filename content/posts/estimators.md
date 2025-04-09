@@ -6,7 +6,7 @@ authors : ["braveseokyung"]
 description : Information theory의 관점에서 Estimator를 살펴보자. 키워드 - MSE, MVUE, Fisher Information, CRLB
 categories : ["courses"]
 series : ["information-theory-and-inference"]
-series_weight : 1
+series_weight : 3
 toc:
     auto: false
 ---
