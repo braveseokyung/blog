@@ -1,7 +1,7 @@
 ---
 title : 'CPU Scheduler 구현 in C'
 date : 2025-06-04T22:28:26+09:00
-draft : False
+draft : false
 authors : ["braveseokyung"]
 description : CPU scheduling 알고리즘(FCFS,SJF,Priority(+preemptive),Round Robin)을 알아보고 C언어로 구현해보자!
 categories : ["Operating-System"]
